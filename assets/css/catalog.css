@@ -1,4 +1,4 @@
-/** Styles **/
+/** CATALOG **/
 
 body {
 	background:#fff;
@@ -32,9 +32,6 @@ body {
 }
 
 /* fonts */
-.didotbold {
-	font-family:"HoeflerText-Black",serif;
-}
 .uppercase {
 	text-transform: uppercase;
 }
@@ -131,19 +128,90 @@ header nav {
 	top:1em;
 }
 
+
+/* CATALOG */
 .catalog {
-	padding:5%;
+	background:#222 url(../images/catalog/bg1.gif) no-repeat;
+	background-size:stretch;
+	color:#fff;
 }
-.catalog {
+
+.catalog header {
+	position:fixed;
+	width:100%;
+	padding:0;
+	height:84px;
+	left:0;
+	bottom:0;
+	background:rgba(0,0,0,0.8);
+}
+.catalog h1 {
+	width:96px;
+	height:96px;
+	background:url(../images/catalog/pushkins.png) no-repeat 0 0;
+	background-size:96px 96px;
+	font-size:1px;
+	text-indent:-999em;
+	position:absolute;
+	right:60px;
+	bottom:60px;
+}
+
+.catalog_listing {
+	font-family:"Hiragino Sans GB";
+	font-weight:bold;
+}
+.catalog_listing {
 	list-style:none;
 }
-.catalog li {
-	padding-left:5em;
+.catalog_listing li {
+	margin:0 0 1em 0;
 }
-.catalog span {
-	display: inline-block;
-	width:4em;
-	margin-left:-5em;
+.catalog_listing a {
+	display:block;
+	text-decoration: none;
+	color:#fff;
+	padding:0.5em 1em;
+	
+	
+}
+.catalog_listing a:hover,
+.catalog_listing a:focus,
+.catalog_listing a:active {
+	color:#fff;
+	background:#80FF78;
+}
+.catalog_listing span {
+	display: block;
+}
+.catalog_listing span.number {
+	font-family:"Courier",monospace;
+	margin-left:1em;
+}
+.catalog_listing span.title {
+	margin-left:2em;
+}
+
+@media only screen and (min-width: 800px) {
+
+	.catalog_listing li {
+		margin:0;
+	}
+	.catalog_listing a {
+		padding-left:7em;
+		display:inline-block;
+	}
+	.catalog_listing span {
+		margin:0;
+	}
+	.catalog_listing span.number {
+		font-family:"Courier",monospace;
+		width:5em;
+		margin-left:-5em;
+		float:left;
+		text-align:center;
+	}
+
 }
 
 
