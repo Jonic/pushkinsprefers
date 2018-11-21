@@ -153,13 +153,14 @@ header nav {
 	font-size:1px;
 	text-indent:-999em;
 	position:absolute;
-	right:60px;
+	right:30px;
 	bottom:60px;
 }
 
 .catalog_listing {
 	font-family:"Hiragino Sans GB";
 	font-weight:bold;
+	margin-top:30px;
 }
 .catalog_listing {
 	list-style:none;
@@ -194,6 +195,12 @@ header nav {
 
 @media only screen and (min-width: 800px) {
 
+	.catalog h1 {
+		right:60px;
+	}
+	.catalog_listing {
+		margin:0;
+	}
 	.catalog_listing li {
 		margin:0;
 	}
