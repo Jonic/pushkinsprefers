@@ -6,6 +6,12 @@ a lot of it is from an early prototype
 
  **/
 
+@font-face {
+  font-family: 'hknova-bold';
+  src: url('../fonts/HKNova-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+
 body {
 	background:#fff;
 	color:#222;
@@ -164,7 +170,7 @@ header nav {
 }
 
 .catalog_listing {
-	font-family:Helvetica,Arial,sans-serif;
+	font-family:'hknova-bold',Helvetica,Arial,sans-serif;
 	font-weight:bold;
 	margin-top:30px;
 }
