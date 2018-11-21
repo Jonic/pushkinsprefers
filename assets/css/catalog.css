@@ -164,7 +164,7 @@ header nav {
 }
 
 .catalog_listing {
-	font-family:"Hiragino Sans GB";
+	font-family:Helvetica,Arial,sans-serif;
 	font-weight:bold;
 	margin-top:30px;
 }
