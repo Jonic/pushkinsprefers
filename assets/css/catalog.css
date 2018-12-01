@@ -180,10 +180,9 @@ header nav {
   font-family: "hknova-bold", Helvetica, Arial, sans-serif;
   font-weight: bold;
   margin-top: 30px;
-}
-.catalog_listing {
   list-style: none;
 }
+
 .catalog_listing li {
   margin: 0 0 1em 0;
 }
@@ -193,12 +192,90 @@ header nav {
   color: #fff;
   padding: 0.5em 1em;
 }
+
+.catalog_listing_lime {
+  font-family: "hknova-bold", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.catalog_listing_lime li {
+  margin: 0 0 1em 0;
+}
+
+.catalog_listing_lime a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+}
+
+.catalog_listing_pink {
+  font-family: "hknova-bold", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.catalog_listing_pink li {
+  margin: 0 0 1em 0;
+}
+
+.catalog_listing_pink a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+}
+
+.catalog_listing_pink_two {
+  font-family: "hknova-bold", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.catalog_listing_pink_two li {
+  margin: 0 0 1em 0;
+}
+
+.catalog_listing_pink_two a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+}
+
+/*Duplicate styles catalog_listing and catalog_listing_lime here as a fallback in case JavaScript doesn't load properly*/
 .catalog_listing a:hover,
 .catalog_listing a:focus,
 .catalog_listing a:active {
   color: #fff;
   background: #80ff78;
 }
+
+.catalog_listing_lime a:hover,
+.catalog_listing_lime a:focus,
+.catalog_listing_lime a:active {
+  color: #fff;
+  background: #80ff78;
+}
+
+.catalog_listing_pink a:hover,
+.catalog_listing_pink a:focus,
+.catalog_listing_pink a:active {
+  color: #fff;
+  background: #ff78d4;
+}
+
+.catalog_listing_pink_two a:hover,
+.catalog_listing_pink_two a:focus,
+.catalog_listing_pink_two a:active {
+  color: #fff;
+  background: #ff289f;
+}
+
 .catalog_listing span {
   display: block;
 }
