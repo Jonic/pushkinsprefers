@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/catalog.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/catalog.css" />
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Pushkins prefers</title>
+  </head>
 
-</head>
+  <body id="catalog" class="catalog">
+    <header><h1>Pushkins prefers</h1></header>
 
-<body class="catalog">
+    <article>
+      <ul class="catalog_listing">
+        <!--
+          <li>
+              <a href="">
+                  <span class="number">003 </span><span class="title">Joe Wheatley's film about his Grandma</span>
+              </a>
+          </li>
 
-<header>
-
-    <h1>Pushkins prefers</h1>
-
-</header>
-
-<article>
-
-    <ul class="catalog_listing">
-        
-        <!-- <li>
-            <a href="">
-                <span class="number">003 </span><span class="title">Joe Wheatley's film about his Grandma</span>
-            </a>
-        </li>
-
+          <li>
+              <a href="">
+                  <span class="number">002 </span><span class="title">Alternative Grace Jones</span>
+              </a>
+          </li>
+        -->
         <li>
-            <a href="">
-                <span class="number">002 </span><span class="title">Alternative Grace Jones</span>
-            </a>
-        </li> -->
-
-        <li>
-            <a href="https://soundcloud.com/pushkinsprefers/dj-ball-haulage-presents-spacedubdanceonthebeach-vol-1">
-                <span class="number">001 </span><span class="title">DJ Ball Haulage presents Spacedubdanceonthebeach volume 1</span>
-            </a>
+          <a
+            href="https://soundcloud.com/pushkinsprefers/dj-ball-haulage-presents-spacedubdanceonthebeach-vol-1"
+            class="title_link"
+          >
+            <span class="number">001 </span
+            ><span class="title"
+              >DJ Ball Haulage presents Spacedubdanceonthebeach volume 1</span
+            >
+          </a>
         </li>
-    </ul>
+      </ul>
+    </article>
 
-</article>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-9732673-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9732673-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-9732673-2');
-</script>
-
-
-</body>
+      gtag("config", "UA-9732673-2");
+    </script>
+  </body>
 </html>
