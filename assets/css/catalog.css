@@ -165,10 +165,10 @@ header nav {
   background: rgba(0, 0, 0, 0.8);
 }
 .catalog h1 {
-  width: 96px;
-  height: 96px;
-  background: url(../images/catalog/pushkins.png) no-repeat 0 0;
-  background-size: 96px 96px;
+  width: 108px;
+  height: 108px;
+  background: url(../images/catalog/pushkins.gif) no-repeat 0 0;
+  background-size: 108px 108px;
   font-size: 1px;
   text-indent: -999em;
   position: absolute;
