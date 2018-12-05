@@ -13,6 +13,6 @@
 
   for (i = 0; i < links.length; i++) {
     //Replace default class with random class from array
-    links[i].classList.replace("catalog_listing", classes[randomVal]);
+    links[i].classList.replace("catalog_listing_color", classes[randomVal]);
   }
 })();
