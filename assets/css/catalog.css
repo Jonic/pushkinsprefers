@@ -193,59 +193,6 @@ header nav {
   padding: 0.5em 1em;
 }
 
-.catalog_listing_lime {
-  font-family: "hknova-bold", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  margin-top: 30px;
-  list-style: none;
-}
-
-.catalog_listing_lime li {
-  margin: 0 0 1em 0;
-}
-
-.catalog_listing_lime a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.5em 1em;
-}
-
-.catalog_listing_pink {
-  font-family: "hknova-bold", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  margin-top: 30px;
-  list-style: none;
-}
-
-.catalog_listing_pink li {
-  margin: 0 0 1em 0;
-}
-
-.catalog_listing_pink a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.5em 1em;
-}
-
-.catalog_listing_pink_two {
-  font-family: "hknova-bold", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  margin-top: 30px;
-  list-style: none;
-}
-
-.catalog_listing_pink_two li {
-  margin: 0 0 1em 0;
-}
-
-.catalog_listing_pink_two a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.5em 1em;
-}
 
 /*Duplicate styles catalog_listing and catalog_listing_lime here as a fallback in case JavaScript doesn't load properly*/
 .catalog_listing a:hover,
