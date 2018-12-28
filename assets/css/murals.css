@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "dos";
+  src: url("../fonts/dos.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+body {
+	background:#000;
+	color:#ccc;
+	font-family:"dos",monospace;
+	font-size:20px;
+	margin:5% 0;
+}
+.mural {
+	background-origin: :5px red yellow;
+	overflow-x:scroll;
+	position:relative;
+}
+img {
+	max-height:80vh;
+	margin:0 5%;
+}
+.info {
+	margin:20px 5% 3em 5%;
+}
+
+@media only screen and (min-width: 500px) {
+
+	body {
+		font-size:30px;
+	}
+
+}
