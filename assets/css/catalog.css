@@ -181,9 +181,9 @@ header nav {
   font-weight: bold;
   margin-top: 0px;
   list-style: none;
-  z-index:1;
-  position:relative;
-  padding:5% 0;
+  z-index: 1;
+  position: relative;
+  padding: 5% 0;
 }
 
 .catalog_listing li {
@@ -196,29 +196,29 @@ header nav {
   color: #fff;
   padding: 0.5em 1em;
 
-  position:relative;
-  z-index:0;
+  position: relative;
+  z-index: 0;
 }
 .catalog_listing a:hover,
 .catalog_listing a:focus,
 .catalog_listing a:active {
-  background:transparent;
+  background: transparent;
 }
 .catalog_listing a:before {
   content: "";
   position: absolute;
-  z-index:-1;
-  top: 0; 
-  left: 0; 
-  right: 0; 
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: 0;
   transform: scaleX(0);
   transform-origin: 0 50%;
-  transition: transform .2s ease-out;
+  transition: transform 0.2s ease-out;
 }
 .catalog_listing a:hover:before,
 .catalog_listing a:focus:before,
-.catalog_listing a:active:before{ 
+.catalog_listing a:active:before {
   transform: scaleX(1);
 }
 .catalog_listing_lime a:before {
@@ -261,8 +261,6 @@ header nav {
   background: #ff289f;
 }*/
 
-
-
 .catalog_listing span {
   display: block;
 }
@@ -277,49 +275,46 @@ header nav {
 /* BACKGROUND CHANNEL */
 .grogdance {
   overflow: hidden;
-  position:fixed;
-  width:100%;
-  height:100%;
-  z-index:0;
-  background:navy;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: navy;
 }
 
 .hegoes {
-  background: url('../images/catalog/grogdance.gif');
-  background-size:120px;
-  height:100%;
+  background: url("../images/catalog/grogdance.gif");
+  background-size: 120px;
+  height: 100%;
   width: 3600px;
-  position:absolute;
-  top:0;
+  position: absolute;
+  top: 0;
 }
 .left {
   animation: slideleft 7s linear infinite;
-  left:0;
+  left: 0;
 }
 .right {
   animation: slideright 7s linear infinite;
-  right:0;
-  background-position-y:60px;
+  right: 0;
+  background-position-y: 60px;
 }
-@keyframes slideleft{
-  0%{
+@keyframes slideleft {
+  0% {
     transform: translate3d(0, 0, 0);
   }
-  100%{
+  100% {
     transform: translate3d(-1200px, 0, 0);
   }
 }
-@keyframes slideright{
-  0%{
+@keyframes slideright {
+  0% {
     transform: translate3d(0, 0, 0);
   }
-  100%{
+  100% {
     transform: translate3d(1200px, 0, 0);
   }
 }
-
-
-
 
 @media only screen and (min-width: 800px) {
   .catalog h1 {
@@ -347,12 +342,11 @@ header nav {
   }
 
   .hegoes {
-    background-size:240px;
+    background-size: 240px;
   }
   .right {
-    background-position-y:120px;
+    background-position-y: 120px;
   }
-
 }
 
 @media only screen and (min-width: 500px) {

@@ -14,3 +14,13 @@
     links[i].classList.replace("catalog_listing_color", classes[randomVal]);
   }
 })();
+
+(function interactWithPushkins() {
+  const push = document.getElementById("pushkins_animation");
+  push.addEventListener("click", function() {
+    console.log(
+      "You have discovered the secret pushkins prod functionality. Come back for more later."
+    );
+  });
+  //console.log(push);
+})();
