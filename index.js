@@ -8,7 +8,7 @@
 
   for (i = 0; i < links.length; i++) {
     //Generate random number
-    let randomVal = Math.floor(Math.random() * 2);
+    let randomVal = Math.floor(Math.random() * 3);
 
     //Replace default class with random class from array
     links[i].classList.replace("catalog_listing_color", classes[randomVal]);

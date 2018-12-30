@@ -179,8 +179,11 @@ header nav {
 .catalog_listing {
   font-family: "hknova-bold", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 0px;
   list-style: none;
+  z-index:1;
+  position:relative;
+  padding:5% 0;
 }
 
 .catalog_listing li {
@@ -259,6 +262,7 @@ header nav {
 }*/
 
 
+
 .catalog_listing span {
   display: block;
 }
@@ -269,6 +273,53 @@ header nav {
 .catalog_listing span.title {
   margin-left: 2em;
 }
+
+/* BACKGROUND CHANNEL */
+.grogdance {
+  overflow: hidden;
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:0;
+  background:navy;
+}
+
+.hegoes {
+  background: url('../images/catalog/grogdance.gif');
+  background-size:120px;
+  height:100%;
+  width: 3600px;
+  position:absolute;
+  top:0;
+}
+.left {
+  animation: slideleft 7s linear infinite;
+  left:0;
+}
+.right {
+  animation: slideright 7s linear infinite;
+  right:0;
+  background-position-y:60px;
+}
+@keyframes slideleft{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1200px, 0, 0);
+  }
+}
+@keyframes slideright{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(1200px, 0, 0);
+  }
+}
+
+
+
 
 @media only screen and (min-width: 800px) {
   .catalog h1 {
@@ -294,6 +345,14 @@ header nav {
     float: left;
     text-align: center;
   }
+
+  .hegoes {
+    background-size:240px;
+  }
+  .right {
+    background-position-y:120px;
+  }
+
 }
 
 @media only screen and (min-width: 500px) {
@@ -348,7 +407,6 @@ header nav {
   }
   article {
     position: relative;
-    margin: 5% 0;
     overflow: hidden;
   }
 
