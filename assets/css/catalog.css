@@ -150,7 +150,6 @@ header nav {
 
 /* CATALOG */
 .catalog {
-  background: #222 url(../images/catalog/bg1.gif) no-repeat;
   background-size: stretch;
   color: #fff;
 }
@@ -230,36 +229,6 @@ header nav {
 .catalog_listing_pink_two a:before {
   background-color: #ff289f;
 }
-
-/*Duplicate styles catalog_listing and catalog_listing_lime here as a fallback in case JavaScript doesn't load properly*/
-/*.catalog_listing a:hover,
-.catalog_listing a:focus,
-.catalog_listing a:active {
-  color: #fff;
-  background-color: #80ff78;
-  background-color:transparent;
-}
-
-.catalog_listing_lime a:before:hover,
-.catalog_listing_lime a:focus,
-.catalog_listing_lime a:active {
-  color: #fff;
-  background: #80ff78;
-}
-
-.catalog_listing_pink a:before:hover,
-.catalog_listing_pink a:focus,
-.catalog_listing_pink a:active {
-  color: #fff;
-  background: #ff78d4;
-}
-
-.catalog_listing_pink_two a:before:hover,
-.catalog_listing_pink_two a:focus,
-.catalog_listing_pink_two a:active {
-  color: #fff;
-  background: #ff289f;
-}*/
 
 .catalog_listing span {
   display: block;
