@@ -317,6 +317,7 @@ img {
   }
   .catalog_listing a {
     padding-left: 7em;
+    display: inline-block;
   }
   .catalog_listing span {
     margin: 0;
