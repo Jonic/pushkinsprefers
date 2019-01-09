@@ -19,26 +19,6 @@ body {
   line-height: 23px;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-.clearfix {
-  display: inline-block;
-}
-/* start commented backslash hack \*/
-* html .clearfix {
-  height: 1%;
-}
-.clearfix {
-  display: block;
-}
-/* close commented backslash hack */
-
 ::selection {
   background: #fc70df;
 }
@@ -136,17 +116,7 @@ img {
   display: block;
 }
 
-header {
-  padding: 1em 5%;
-  width: 90%;
-  z-index: 3;
-  background: rgba(255, 255, 255, 0.5);
-}
-header nav {
-  position: absolute;
-  right: 5%;
-  top: 1em;
-}
+
 
 /* CATALOG */
 .catalog {
@@ -157,32 +127,82 @@ header nav {
 .catalog header {
   position: fixed;
   width: 100%;
-  padding: 0;
-  height: 84px;
+  padding: 2em 0;
+  padding-right:;
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
+  display:flex;
 }
 .catalog h1 {
-  width: 108px;
-  height: 108px;
+  width: 96px;
+  height: 96px;
   background: url(../images/catalog/pushkins.gif) no-repeat 0 0;
-  background-size: 108px 108px;
-  font-size: 1px;
+  background-size: 100% 100%;
+  font-size: 1rem;
   text-indent: -999em;
   position: absolute;
-  right: 30px;
-  bottom: 60px;
+  right: 15px;
+  bottom: 65px;
 }
+@media only screen and (min-width: 800px) {
+  .catalog h1 {
+    width: 108px;
+    height: 108px;
+    right: 30px;
+    bottom: 4.5em;
+  }
+}
+
+/* Welcome */
+.welcome {
+  padding-left:1.2em;
+}
+.welcome p {
+  color: #fff;
+  overflow: hidden; 
+  white-space: nowrap;
+  margin:0;
+}
+.welcome p span {
+  display:none; /* mobile hide */
+}
+@media only screen and (max-width: 800px) {
+  .welcome p {
+    animation: 
+    typing 3s steps(28, end);
+  }
+}
+@media only screen and (min-width: 800px) {
+  .welcome {
+    padding-left:3em;
+  }
+  .welcome p {
+    animation: 
+    typing 5s steps(53, end);
+  }
+  .welcome p span {
+    display:inline;
+  }
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+
+
 
 .catalog_listing {
   font-family: "hknova-bold", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  margin-top: 0px;
   list-style: none;
   z-index: 1;
   position: relative;
   padding: 5% 0;
+  margin:0;
 }
 
 .catalog_listing li {
@@ -194,7 +214,7 @@ header nav {
   text-decoration: none;
   color: #fff;
   padding: 0.5em 1em;
-
+  padding-left: 4em;
   position: relative;
   z-index: 0;
 }
@@ -235,10 +255,12 @@ header nav {
 }
 .catalog_listing span.number {
   font-family: "Courier", monospace;
-  margin-left: 1em;
+  width: 4em;
+  margin-left: -4em;
+  float: left;
+  text-align: center;
 }
 .catalog_listing span.title {
-  margin-left: 2em;
 }
 
 /* BACKGROUND CHANNEL */
@@ -253,27 +275,27 @@ header nav {
 
 .hegoes {
   background: url("../images/catalog/grogdance.gif");
-  background-size: 120px;
+  background-size: 160px;
   height: 100%;
-  width: 3600px;
+  width: 4800px;
   position: absolute;
   top: 0;
 }
 .left {
-  animation: slideleft 7s linear infinite;
+  animation: slideleft 12s linear infinite;
   left: 0;
 }
 .right {
-  animation: slideright 7s linear infinite;
+  animation: slideright 12s linear infinite;
   right: 0;
-  background-position-y: 60px;
+  background-position-y: 80px;
 }
 @keyframes slideleft {
   0% {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-1200px, 0, 0);
+    transform: translate3d(-2400px, 0, 0);
   }
 }
 @keyframes slideright {
@@ -281,7 +303,7 @@ header nav {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(1200px, 0, 0);
+    transform: translate3d(2400px, 0, 0);
   }
 }
 
@@ -289,9 +311,7 @@ header nav {
   .catalog h1 {
     right: 60px;
   }
-  .catalog_listing {
-    margin: 0;
-  }
+
   .catalog_listing li {
     margin: 0;
   }
@@ -303,11 +323,8 @@ header nav {
     margin: 0;
   }
   .catalog_listing span.number {
-    font-family: "Courier", monospace;
-    width: 5em;
-    margin-left: -5em;
-    float: left;
-    text-align: center;
+    width: 7em;
+    margin-left: -7em;
   }
 
   .hegoes {
@@ -315,6 +332,10 @@ header nav {
   }
   .right {
     background-position-y: 120px;
+  }
+
+  .welcome p span {
+    display:inline;
   }
 }
 
