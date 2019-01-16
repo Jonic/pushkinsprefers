@@ -4,29 +4,27 @@
 }
 
 body {
-	background:#000;
-	color:#ccc;
-	font-family:"dos",monospace;
-	font-size:20px;
-	margin:5% 0;
+  background: #000;
+  color: #ccc;
+  font-family: "dos", monospace;
+  font-size: 20px;
+  margin: 5% 0;
 }
 .mural {
-	background-origin: :5px red yellow;
-	overflow-x:scroll;
-	position:relative;
+  background-origin: 5px red yellow;
+  overflow-x: scroll;
+  position: relative;
 }
 img {
-	max-height:80vh;
-	margin:0 5%;
+  max-height: 80vh;
+  margin: 0 5%;
 }
 .info {
-	margin:20px 5% 3em 5%;
+  margin: 20px 5% 3em 5%;
 }
 
 @media only screen and (min-width: 500px) {
-
-	body {
-		font-size:30px;
-	}
-
+  body {
+    font-size: 30px;
+  }
 }
