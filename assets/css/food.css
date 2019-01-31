@@ -5,12 +5,13 @@
 }
 
 body {
-	font-family:'archer';
+	font-family:'archer',monospace;
 	font-size:1.5rem;
 	text-transform: uppercase;
 	font-smooth:never;
 	-webkit-font-smoothing: none;
 	background:#e86a73;
+	background:#d6f264;
 }
 
 h1 {
