@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "archer";
+  src: url("../fonts/archer.ttf") format("truetype");
+  /* The FontStruction “Archer” (https://fontstruct.com/fontstructions/show/670315) by “MattThorson” is licensed under a Creative Commons Attribution license (http://creativecommons.org/licenses/by/3.0/). */
+}
+
+body {
+	font-family:'archer';
+	font-size:1.5rem;
+	text-transform: uppercase;
+	font-smooth:never;
+	-webkit-font-smoothing: none;
+	background:#e86a73;
+}
+
+h1 {
+	border-bottom: 3px dashed #000;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	white-space: nowrap;
+}
+
+
+a.icon {
+	padding-left:1em;
+	text-decoration: none;
+	background-position:0 0;
+	background-repeat:no-repeat;
+}
+
+a.icon:hover {
+	text-decoration: underline;
+}
+
+a.file {
+	background-image: url(../images/icon-file.gif);
+}
+
+a.up {
+	background-image:url(../images/icon-back.gif);
+	padding-bottom:10px;
+}
