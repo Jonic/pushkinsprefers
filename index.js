@@ -18,9 +18,7 @@
 (function interactWithPushkins() {
   const push = document.getElementById("pushkins_animation");
   push.addEventListener("click", function() {
-    console.log(
-      "You have discovered the secret pushkins prod functionality. Come back for more later."
-    );
+    randomBackground();
   });
 })();
 
@@ -32,7 +30,7 @@
  * string literal and style as usual.
  * Then when it gets randomly added to the DOM the styles/animation will be applied.
  */
-(function randomBackground() {
+function randomBackground() {
   const grogDance = `<div class="grogdance">
   <div class="hegoes left"></div>
   <div class="hegoes right"></div>
@@ -50,4 +48,6 @@
   const currentBackground = document.getElementById("background");
 
   currentBackground.innerHTML = backgrounds[randomVal];
-})();
+}
+
+randomBackground();
