@@ -22,5 +22,32 @@
       "You have discovered the secret pushkins prod functionality. Come back for more later."
     );
   });
-  //console.log(push);
+})();
+
+/**
+ * This seems very hacky but after a few attempts this seems the tidiest way of
+ * accomplishing random backgrounds without sacrificing
+ * performance.
+ * Whenever we need to add a new background we just add the HTML to this function as a
+ * string literal and style as usual.
+ * Then when it gets randomly added to the DOM the styles/animation will be applied.
+ */
+(function randomBackground() {
+  const grogDance = `<div class="grogdance">
+  <div class="hegoes left"></div>
+  <div class="hegoes right"></div>
+</div>`;
+
+  const grogDance2 = `<div class="grogdance2">
+  <div class="hegoes left"></div>
+  <div class="hegoes right"></div>
+</div>`;
+
+  const backgrounds = [grogDance, grogDance2];
+  //The number here should always match the number of backgrounds we have in this function.
+  const randomVal = Math.floor(Math.random() * 2);
+
+  const currentBackground = document.getElementById("background");
+
+  currentBackground.innerHTML = backgrounds[randomVal];
 })();
