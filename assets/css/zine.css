@@ -1,7 +1,7 @@
 /** Styles **/
 
 body {
-	background:#fff;
+	background:#CED7D4;
 	color:#222;
 	font-family:"Aktiv Grotesk Corp",Helvetica,sans-serif;
 	font-size:16px;
@@ -99,10 +99,6 @@ b {
 }
 
 
-#player {
-	max-width:none !important;
-}
-
 h1,h2,h3,h4,h5,h6 {
 	font-weight:bold;
 }
@@ -122,15 +118,43 @@ img {
 }
 
 header {
-	padding:1em 5%;
-	width:90%;
 	z-index:3;
-	background: rgba(255,255,255,0.5);
+	height:35vh;
+	display:flex;
+	flex-direction: row;
 }
-header nav {
-	position:absolute;
-	right:5%;
+header h1 {
+	font-size:139px;
+	font-size:20vw;
+	margin-left:10%;
+	align-self:flex-end;
+
+}
+.cover {
+	height:65vh;
+	background-size:cover;
+	background-position:center center;
+}
+.cover img {
+	display:none;	
+}
+
+.home,
+.date {
+	position:fixed;
 	top:1em;
+	z-index:10;
+}
+
+.home {
+	left:1em;
+}
+.date {
+	right:1em;
+}
+
+article {
+	margin-top:50%;
 }
 
 .wheniz {
@@ -140,10 +164,9 @@ header nav {
 	font-family:"PTMono-Bold",monospace;
 }
 
-.content {
+section {
 	padding:20px;
 	z-index:2;
-	background:rgba(255,255,255,0.9);
 }
 
 .release-deets {
@@ -154,9 +177,9 @@ header nav {
 .release-deets img {
 	margin-bottom:1em;
 }
-.release-deets h3 em {
+/*.release-deets h3 em {
 	display:block;
-}
+}*/
 .release-deets p {
 	color:#999;
 }
@@ -225,6 +248,12 @@ footer a:hover {
 	background:transparent;
 }
 
+/* MONTHS */
+.feb19 header {
+	font-family: "Space Mono",monospace;
+	color:#FF3079;
+}
+
 
 
 @media only screen and (min-width: 500px) {
@@ -248,7 +277,7 @@ footer a:hover {
 		text-align:left;
 	}
 
-	.content,
+	section,
 	footer {
 		padding:2em;
 	}
@@ -295,7 +324,7 @@ footer a:hover {
 		padding-left:5%;
 	}
 
-	.content,
+	section,
 	footer {
 		position:relative;
 		padding:2.5% 5%;
