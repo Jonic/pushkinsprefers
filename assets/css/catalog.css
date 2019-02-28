@@ -257,24 +257,16 @@ img {
 }
 
 /* BACKGROUND CHANNEL */
-.grogdance {
+.background {
   overflow: hidden;
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+.grogdance {
   background: navy;
 }
-
-.grogdance2 {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background: green;
-}
-
 .hegoes {
   background: url("../images/catalog/grogdance.gif");
   background-size: 160px;
@@ -307,6 +299,10 @@ img {
   100% {
     transform: translate3d(2400px, 0, 0);
   }
+}
+
+.disk {
+  background:navy;
 }
 
 @media only screen and (min-width: 800px) {

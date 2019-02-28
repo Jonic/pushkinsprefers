@@ -31,17 +31,14 @@
  * Then when it gets randomly added to the DOM the styles/animation will be applied.
  */
 function randomBackground() {
-  const grogDance = `<div class="grogdance">
+  const grogDance = `<div class="background grogdance">
   <div class="hegoes left"></div>
   <div class="hegoes right"></div>
 </div>`;
 
-  const grogDance2 = `<div class="grogdance2">
-  <div class="hegoes left"></div>
-  <div class="hegoes right"></div>
-</div>`;
+  const disk = `<div class="background disk"></div>`;
 
-  const backgrounds = [grogDance, grogDance2];
+  const backgrounds = [grogDance, disk];
   //The number here should always match the number of backgrounds we have in this function.
   const randomVal = Math.floor(Math.random() * 2);
 
