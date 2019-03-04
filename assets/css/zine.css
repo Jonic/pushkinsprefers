@@ -156,10 +156,10 @@ header h1 {
 }
 
 .home {
-	left:1em;
+	left:3vw;
 }
 .date {
-	right:1em;
+	right:3vw;
 }
 
 article {
@@ -254,6 +254,9 @@ footer a:hover {
 }
 
 /* MONTHS */
+.feb19 {
+	border:1.5vw solid #FF3079;
+}
 .feb19 header,
 .feb19 h2
  {
