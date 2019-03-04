@@ -1,11 +1,20 @@
-/** Styles **/
+@font-face {
+  font-family: "spacemono";
+  src: url("../fonts/spacemono-regs.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "spacemono";
+  src: url("../fonts/spacemono-bold.ttf") format("truetype");
+  font-weight: bold;
+}
 
 body {
 	background:#CED7D4;
 	color:#222;
 	font-family:"Aktiv Grotesk Corp",Helvetica,sans-serif;
 	font-size:16px;
-	line-height:23px;
+	line-height:1.5;
 }
 
 .clearfix:after {
@@ -74,7 +83,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-	background:yellow;
+	
 }
 
 strong {
@@ -126,9 +135,9 @@ header {
 header h1 {
 	font-size:139px;
 	font-size:20vw;
+	font-size:12vh;
 	margin-left:10%;
 	align-self:flex-end;
-
 }
 .cover {
 	height:65vh;
@@ -154,7 +163,6 @@ header h1 {
 }
 
 article {
-	margin-top:50%;
 }
 
 .wheniz {
@@ -177,11 +185,8 @@ section {
 .release-deets img {
 	margin-bottom:1em;
 }
-/*.release-deets h3 em {
-	display:block;
-}*/
 .release-deets p {
-	color:#999;
+	opacity:0.5;
 }
 
 .links {
@@ -249,9 +254,20 @@ footer a:hover {
 }
 
 /* MONTHS */
-.feb19 header {
-	font-family: "Space Mono",monospace;
+.feb19 header,
+.feb19 h2
+ {
+	font-family: "spacemono",monospace;
 	color:#FF3079;
+}
+.feb19 a {
+	color:#FF3079;
+}
+
+.feb19 a:hover,
+.feb19 a:focus,
+.feb19 a:active {
+	color:#000;
 }
 
 
@@ -260,7 +276,9 @@ footer a:hover {
 
 	body {
 		font-size:17px;
-		line-height:25px;
+	}
+	header h1 {
+		font-size:16vh;
 	}
 
 	form {
@@ -289,6 +307,7 @@ footer a:hover {
 	}
 	.release-deets .img {
 		max-width:10em;
+		flex-shrink: 0;
 	}
 	.release-deets img {
 		margin:0;
@@ -297,19 +316,23 @@ footer a:hover {
 		padding-left:1em;
 	}
 	.release-deets p {
-		color:#999;
 		margin:0;
 	}
-
-
-
 
 }
 
 @media only screen and (min-width: 800px) {
 	body {
 		font-size:18px;
-		line-height:27px;
+	}
+	header h1 {
+		font-size:8em;
+	}
+	header {
+		height:40vh;
+	}
+	.cover {
+		height:100vh;
 	}
 	article {
 		position:relative;
