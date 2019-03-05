@@ -201,14 +201,14 @@ img {
 }
 
 .catalog_listing li {
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0;
 }
 
 .catalog_listing a {
   display: block;
   text-decoration: none;
   color: #fff;
-  padding: 0.5em 1em;
+  padding: 0.8em 1em;
   padding-left: 4em;
   position: relative;
   z-index: 0;
@@ -302,7 +302,7 @@ img {
 }
 
 .disk {
-  background:navy;
+  background:#793a80 url(../images/loading-ad.gif) no-repeat top right;
 }
 
 @media only screen and (min-width: 800px) {
@@ -314,7 +314,7 @@ img {
     margin: 0;
   }
   .catalog_listing a {
-    padding-left: 7em;
+    padding:0.6em 1em 0.6em 7em;
     display: inline-block;
   }
   .catalog_listing span {
@@ -330,6 +330,12 @@ img {
   }
   .right {
     background-position-y: 120px;
+  }
+
+  .disk {
+    background-image:url(../images/loading-disk.gif);
+    background-size:50vw;
+    background-position:center right;
   }
 
   .welcome p span {
