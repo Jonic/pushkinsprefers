@@ -1,0 +1,26 @@
+
+
+
+
+::selection {
+    background:#F55FB9;
+}
+
+body {
+    border-color:blue;
+    background-color:#ccc;
+}
+header,
+h2
+ {
+    font-family:;
+    color:blue;
+}
+a {
+    color:#F55FB9;
+}
+a:hover,
+a:focus,
+a:active {
+    color:blue;
+}
