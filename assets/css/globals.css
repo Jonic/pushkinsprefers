@@ -1,0 +1,10 @@
+.home {
+    position:fixed;
+    top:2vw;
+    left:3vw;
+    z-index:10;
+}
+
+.home h2 {
+    display:none;
+}

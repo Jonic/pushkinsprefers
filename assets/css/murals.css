@@ -12,12 +12,6 @@ body {
   font-smooth:never;
   margin-top:10rem;
 }
-.home {
-  position:fixed;
-  left:1rem;
-  top:1rem;
-  z-index:5;
-}
 a {
   color:pink;
 }
