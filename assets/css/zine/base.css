@@ -1,6 +1,6 @@
 body {
 	color:#222;
-	font-family:"Aktiv Grotesk Corp",Helvetica,sans-serif;
+	font-family:"Public Sans", "Aktiv Grotesk Corp",Helvetica,sans-serif;
 	font-size:16px;
 	line-height:1.5;
 	border:1.5vw solid;
@@ -61,13 +61,15 @@ header {
 	height:35vh;
 	display:flex;
 	flex-direction: row;
+	padding-bottom:2rem;
 }
 header h1 {
 	font-size:139px;
 	font-size:20vw;
 	font-size:12vh;
-	margin-left:10%;
+	margin-left:7%;
 	align-self:flex-end;
+	line-height:1;
 }
 .cover {
 	height:65vh;
@@ -82,7 +84,7 @@ header h1 {
 	position:fixed;
 	top:2vw;
 	z-index:10;
-	right:3vw;
+	right:5%;
 	font-size:1em;
 	font-weight:normal;
 }
