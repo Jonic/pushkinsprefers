@@ -56,6 +56,9 @@ a:active {
     margin-top:0;
     background-color:#CAC8C4;
 }
+article {
+    margin-bottom:0;
+}
 
 @media only screen and (min-width: 800px) {
 
