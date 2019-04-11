@@ -1,5 +1,5 @@
-Sitemap: http://pushkinsprefers.biz/sitemap.xml
+Sitemap: https://pushkinsprefers.biz/sitemap.xml
 
 User-agent: * 
-Disallow: 
+Disallow: /zine-template.html
 
