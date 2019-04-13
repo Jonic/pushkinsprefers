@@ -1,4 +1,4 @@
-/** CATALOG
+/** INDEX
 
 this needs a bunch of old code putting in a new place
 
@@ -116,8 +116,6 @@ img {
   display: block;
 }
 
-
-
 /* CATALOG */
 .catalog {
   background-size: stretch;
@@ -128,11 +126,10 @@ img {
   position: fixed;
   width: 100%;
   padding: 2em 0;
-  padding-right:;
   left: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
-  display:flex;
+  display: flex;
 }
 .catalog h1 {
   width: 96px;
@@ -156,44 +153,42 @@ img {
 
 /* Welcome */
 .welcome {
-  padding-left:1.2em;
+  padding-left: 1.2em;
 }
 .welcome p {
   color: #fff;
-  overflow: hidden; 
+  overflow: hidden;
   white-space: nowrap;
-  margin:0;
+  margin: 0;
 }
 .welcome p span {
-  display:none; /* mobile hide */
+  display: none; /* mobile hide */
 }
 @media only screen and (max-width: 800px) {
   .welcome p {
-    animation: 
-    typing 3s steps(28, end);
+    animation: typing 3s steps(28, end);
   }
 }
 @media only screen and (min-width: 800px) {
   .welcome {
-    padding-left:3em;
+    padding-left: 3em;
   }
   .welcome p {
-    animation: 
-    typing 5s steps(53, end);
+    animation: typing 5s steps(53, end);
   }
   .welcome p span {
-    display:inline;
+    display: inline;
   }
 }
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
-
-
-
-
 
 .catalog_listing {
   font-family: "hknova-bold", Helvetica, Arial, sans-serif;
@@ -202,18 +197,18 @@ img {
   z-index: 1;
   position: relative;
   padding: 5% 0;
-  margin:0;
+  margin: 0;
 }
 
 .catalog_listing li {
-  margin: 0 0 1em 0;
+  margin: 0 0 0.5em 0;
 }
 
 .catalog_listing a {
   display: block;
   text-decoration: none;
   color: #fff;
-  padding: 0.5em 1em;
+  padding: 0.8em 1em;
   padding-left: 4em;
   position: relative;
   z-index: 0;
@@ -260,16 +255,16 @@ img {
   float: left;
   text-align: center;
 }
-.catalog_listing span.title {
-}
 
 /* BACKGROUND CHANNEL */
-.grogdance {
+.background {
   overflow: hidden;
   position: fixed;
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+.grogdance {
   background: navy;
 }
 
@@ -307,6 +302,10 @@ img {
   }
 }
 
+.disk {
+  background:#793a80 url(../images/loading-ad.gif) no-repeat top right;
+}
+
 @media only screen and (min-width: 800px) {
   .catalog h1 {
     right: 60px;
@@ -316,7 +315,7 @@ img {
     margin: 0;
   }
   .catalog_listing a {
-    padding-left: 7em;
+    padding:0.6em 1em 0.6em 7em;
     display: inline-block;
   }
   .catalog_listing span {
@@ -334,8 +333,14 @@ img {
     background-position-y: 120px;
   }
 
+  .disk {
+    background-image:url(../images/loading-disk.gif);
+    background-size:50vw;
+    background-position:center right;
+  }
+
   .welcome p span {
-    display:inline;
+    display: inline;
   }
 }
 
@@ -389,7 +394,7 @@ img {
     font-size: 18px;
     line-height: 27px;
   }
-  article {
+  nav {
     position: relative;
     overflow: hidden;
   }

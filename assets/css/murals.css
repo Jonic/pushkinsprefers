@@ -5,10 +5,34 @@
 
 body {
   background: #000;
-  color: #ccc;
+  color: #999;
   font-family: "dos", monospace;
   font-size: 20px;
-  margin: 5% 0;
+  margin: 1rem 0;
+  font-smooth:never;
+  margin-top:10rem;
+}
+a {
+  color:pink;
+}
+a:hover,
+a:focus {
+  color:white;
+}
+h1 {
+  font-size:3.4rem;
+  text-align:right;
+  position:fixed;
+  top:1rem;
+  right:4%;
+  color:#fff;
+  z-index:3;
+  text-shadow:0.3rem 0.3rem 0 #000;
+}
+article {
+  background:#000;
+  z-index:2;
+  position:relative;
 }
 .mural {
   background-origin: 5px red yellow;
@@ -25,9 +49,18 @@ img {
 
 @media only screen and (min-width: 500px) {
   body {
-    font-size: 30px;
+    font-size:30px;
+    margin-top:12rem;
+  }
+  h1 {
+    font-size:5rem;
   }
   img {
     max-height: 80vh;
+  }
+}
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size:8rem;
   }
 }
