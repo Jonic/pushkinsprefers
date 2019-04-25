@@ -8,6 +8,7 @@ body {
   font-size:20px;
   background:#B8E986 url('../images/test1.gif') center center;
   background-size:140%;
+  line-height:1.2;
 }
 
 a {
@@ -37,6 +38,7 @@ h1 {
   text-shadow:0.05em 0.05em 0 white;
   align-self:flex-end;
   z-index:1;
+  line-height:1;
 }
 h1 span {
   background:yellow;
@@ -128,9 +130,11 @@ article img {
   width:100%;
   display:block;
 }
-article p,
 article h3 {
-  margin:0.5em;
+  margin:1rem;
+}
+article p {
+  margin:0 1rem 1em 1rem;
 }
 article.image {
   margin-left:0;
@@ -145,15 +149,21 @@ article.image h3 {
   display:none;
 }
 article.image a img { 
-  transition: all 5s ease-in-out; 
+  transition: all 5s ease-in; 
 }
 article.image a:hover img,
 article.image a:focus img {
-  transform: scale(0.01);
+  transform: scale(0.0);
 }
 
 article.mix {
-  padding:0.5em;
+  padding:1rem;
+}
+article.mix p,
+article.mix h3 {
+  margin-top:0;
+  margin-left:0;
+  margin-right:0;
 }
 
 
@@ -166,6 +176,44 @@ article.mix {
     background-repeat: repeat-x;
     background-size:50%;
     background-position:-30vw;
+  }
+  .hegoes {
+    background-size: 240px;
+  }
+  .right {
+    background-position-y: 120px;
+  }
+
+  main {
+    display:flex;
+    align-items:start;
+    flex-wrap: wrap;
+  }
+  article {
+    margin:2.5%;
+    flex-basis:40%;
+    flex-grow:0.5;
+  }
+  article.image {
+    flex-basis:60%;
+    flex-grow:1;
+    align-self:flex-end;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  article {
+    margin:2.5%;
+    flex-basis:24%;
+    flex-grow:0.5;
+    align-items:center;
+  }
+  article.image {
+    flex-basis:60%;
+    flex-grow:1;
+    align-self:flex-end;
   }
 
 }
