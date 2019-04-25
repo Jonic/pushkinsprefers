@@ -6,7 +6,7 @@
 body {
   font-family:'Public Sans',Helvetica,sans-serif; 
   font-size:20px;
-  background:#B8E986 url('../images/test1.gif') center center;
+  background:#B8E986 url('../images/test1.gif') center center fixed;
   background-size:140%;
   line-height:1.2;
 }
@@ -140,7 +140,7 @@ article.image {
   margin-left:0;
   margin-right:0;
   padding:0;
-  background:url(../images/loading-ad.gif)
+  background:url(../images/loading-ad.gif);
 }
 article.image {
   box-shadow: none;
@@ -167,7 +167,11 @@ article.mix h3 {
 }
 
 
-
+footer {
+  background:#B8E986;
+  padding:5%;
+  margin-top:5%;
+}
 
 
 @media only screen and (min-width: 800px) {
