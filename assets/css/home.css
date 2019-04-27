@@ -37,7 +37,7 @@ h1 {
   font-family:'archer';
   text-transform:uppercase;
   max-width:7em;
-  font-size:12vw;
+  font-size:18vw;
   display:inline-block;
   text-shadow:0.05em 0.05em 0 white;
   align-self:flex-end;
@@ -70,28 +70,29 @@ h3 {
   background:navy;
 }
 .hegoes {
-  background: url("../images/catalog/grogdance.gif");
-  background-size: 160px;
+  background: url("../images/catalog/groupdance.gif");
+  background-size: 1440px;
   height: 100%;
-  width: 4800px;
+  width: 4320px;
   position: absolute;
   top: 0;
 }
 .left {
-  animation: slideleft 12s linear infinite;
+  animation: slideleft 8s linear infinite;
   left: 0;
+  background-position-y: 10px;
 }
 .right {
-  animation: slideright 12s linear infinite;
+  animation: slideright 8s linear infinite;
   right: 0;
-  background-position-y: 80px;
+  background-position-y: 100px;
 }
 @keyframes slideleft {
   0% {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(-2400px, 0, 0);
+    transform: translate3d(-1440px, 0, 0);
   }
 }
 @keyframes slideright {
@@ -99,7 +100,7 @@ h3 {
     transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translate3d(2400px, 0, 0);
+    transform: translate3d(1440px, 0, 0);
   }
 }
 
@@ -182,13 +183,16 @@ footer {
 
 @media only screen and (min-width: 800px) {
 
+  h1 {
+    font-size:12vw;
+  }
   .disk {
     background-repeat: repeat-x;
     background-size:50%;
     background-position:-30vw;
   }
   .hegoes {
-    background-size: 240px;
+    background-size: 1920px;
   }
   .right {
     background-position-y: 120px;
