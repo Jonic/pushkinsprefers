@@ -20,6 +20,10 @@ a:focus {
   background:#B8E986;
   background:yellow;
 }
+p {
+  margin:1em 0;
+  max-width:35em;
+}
 
 header {
   background:navy;
@@ -171,7 +175,7 @@ footer {
   background:#B8E986;
   color:#B8E986;
   background:navy;
-  padding:5%;
+  padding:2.5% 5%;
   margin-top:5%;
 }
 
@@ -204,6 +208,13 @@ footer {
     flex-basis:60%;
     flex-grow:1;
     align-self:flex-end;
+  }
+
+  footer {
+    background-image: url(../images/catalog/pushkins.gif);
+    background-repeat:no-repeat;
+    background-position:95% bottom;
+    background-size:128px;
   }
 
 }
