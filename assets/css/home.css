@@ -172,6 +172,10 @@ article.mix h3 {
   margin-right:0;
 }
 
+article.thumb img {
+  margin-bottom:5%;
+}
+
 
 footer {
   background:#B8E986;
@@ -209,10 +213,23 @@ footer {
     flex-basis:40%;
     flex-grow:0.5;
   }
+  article.big {
+    flex-basis:60%;
+  }
   article.image {
     flex-basis:60%;
     flex-grow:1;
     align-self:flex-end;
+  }
+  article.thumb {
+    padding-left:300px;
+    overflow:hidden;
+  }
+  article.thumb img {
+    width:260px;
+    float:left;
+    margin-left:-280px;
+
   }
 
   footer {
