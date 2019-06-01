@@ -1,0 +1,16 @@
+# Project dependencies
+.cache
+node_modules
+coverage
+yarn-error.log
+
+# Build directory
+/public
+.DS_Store
+.css
+
+# Dotenv
+.env
+
+# vim swap files
+*.swp

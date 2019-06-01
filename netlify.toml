@@ -1,0 +1,32 @@
+[build]
+  command = "gatsby build --prefix-paths"
+  publish = "public/"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Clacks-Overhead = "GNU Terry Pratchett"
+    Basic-Auth = "gemini:1kuE6YAxQPuGZXTn"
+
+[context.branch-deploy.environment]
+  BASE_HREF = "https://www.raspberrypi.org"
+  GOOGLE_ANALYTICS_TRACKING_ID = "xx-xxxxxxxx-x"
+
+[context.deploy-preview.environment]
+  BASE_HREF = "https://www.raspberrypi.org"
+  GOOGLE_ANALYTICS_TRACKING_ID = "xx-xxxxxxxx-x"
+
+[context.production.environment]
+  BASE_HREF = "https://www.raspberrypi.org"
+  GOOGLE_ANALYTICS_TRACKING_ID = "UA-46270871-1"
+
+[[redirects]]
+  from = "/resellers/*"
+  to = "https://api.resellers.raspberrypi.org/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/homepage-9df4b/*"
+  to = "/:splat"
+  status = 200

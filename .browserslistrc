@@ -1,0 +1,5 @@
+# https://github.com/browserslist/browserslist#config-file
+> 1%
+last 2 versions
+not ie 10
+not ie 11
