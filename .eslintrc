@@ -1,15 +1,8 @@
 plugins:
-  - jest
-  - jsx-a11y
   - prettier
-  - react
-  - react-hooks
 
 extends:
-  - plugin:jsx-a11y/recommended
-  - plugin:react/recommended
   - prettier
-  - prettier/react
 
 parser: babel-eslint
 
@@ -17,11 +10,6 @@ parserOptions:
   sourceType: module
   ecmaFeatures:
     modules: true
-    jsx: true
-
-settings:
-  react:
-    version: detect
 
 env:
   amd: true
@@ -32,10 +20,6 @@ env:
 
 rules:
   # Possible Errors
-  jest/no-disabled-tests: 2
-  jest/no-focused-tests: 2
-  jest/no-identical-title: 2
-  jest/valid-expect: 2
   no-cond-assign: 2
   no-console: 2
   no-constant-condition: 2
@@ -151,7 +135,6 @@ rules:
   func-style: 1
   id-length: 0
   id-match: 0
-  jsx-quotes: 0
   linebreak-style: 2
   lines-around-comment: 0
   max-depth: 0
@@ -201,8 +184,3 @@ rules:
   prefer-spread: 0
   prefer-template: 0
   require-yield: 0
-
-  # React
-  react-hooks/exhaustive-deps: "warn"
-  react-hooks/rules-of-hooks: "error"
-  react/react-in-jsx-scope: 0

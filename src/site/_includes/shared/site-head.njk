@@ -1,0 +1,34 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>{% include 'assets/styles/application.min.css' %}</style>
+
+<link rel="apple-touch-icon" href="{{ favicon }}" />
+<link rel="icon" type="image/png" href="{{ favicon }}" sizes="196x196" />
+
+<meta name="application-name" content="pushkinsprefers.biz" />
+<meta name="description" content="A new publishing empire." />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="{{ favicon }}" />
+<meta name="msapplication-square70x70logo" content="{{ favicon }}" />
+<meta name="msapplication-square150x150logo" content="{{ favicon }}" />
+<meta name="msapplication-wide310x150logo" content="{{ favicon }}" />
+<meta name="msapplication-square310x310logo" content="{{ favicon }}" />
+<meta property="og:image" content="{{url}}{{ coverImage }}">
+<meta property="og:site_name" content="Pushkins Prefers">
+<meta property="og:title" content="Pushkins Prefers" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://pushkinsprefers.biz/" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://pushkinsprefers.biz/{{ coverImage }}" />
+<meta name="twitter:site" content="@pushkinsprefers">
+<meta name="twitter:title" content="Pushkins Prefers" />
+<meta name="twitter:url" content="https://pushkinsprefers.biz/" />
+
+<title>
+  {% if pageTitle %}
+    {{ pageTitle }}
+  {% else %}
+    {{ defaultPageTitle }}
+  {% endif %}
+</title>
