@@ -1,6 +1,4 @@
+archive
 node_modules
-dist
-functions
-src/site/_includes/css
-.env
-yarn-error.log
+public
+src/assets

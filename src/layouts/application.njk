@@ -1,0 +1,29 @@
+---
+useFooter: true
+useHeader: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include '../includes/shared/site-head.njk' %}
+  </head>
+
+  <body>
+    {% if useHeader %}
+      {% include "shared/header.njk" %}
+    {% endif %}
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    {% if useFooter %}
+      {% include "shared/footer.njk" %}
+    {% endif %}
+
+    {% include '../includes/shared/site-footer.njk' %}
+  </body>
+</html>
+
+
+
