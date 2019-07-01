@@ -1,34 +1,34 @@
+{% set description = pageDescription or site.description %}
+{% set coverImage = pageCoverImage or site.converImage %}
+{% set title = pageTitle | titleText %}
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>{% include '../styles/application.min.css' %}</style>
+<!-- GLOBAL META -->
 
-<link rel="apple-touch-icon" href="{{ site.favicon }}" />
-<link rel="icon" type="image/png" href="{{ site.favicon }}" sizes="196x196" />
-
-<meta name="application-name" content="{{ site.title }}" />
-<meta name="description" content="{{ site.description }}" />
+<meta name="application-name" content="{{ title }}" />
+<meta name="description" content="{{ description }}" />
 <meta name="msapplication-TileColor" content="#FFFFFF" />
 <meta name="msapplication-TileImage" content="{{ site.favicon }}" />
 <meta name="msapplication-square70x70logo" content="{{ site.favicon }}" />
 <meta name="msapplication-square150x150logo" content="{{ site.favicon }}" />
 <meta name="msapplication-wide310x150logo" content="{{ site.favicon }}" />
 <meta name="msapplication-square310x310logo" content="{{ site.favicon }}" />
-<meta property="og:image" content="{{url}}{{ site.coverImage }}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }}" />
+<meta property="og:image" content="{{url}}{{ coverImage }}">
+<meta property="og:site_name" content="{{ title }}">
+<meta property="og:title" content="{{ title }}" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ site.baseUrl }}" />
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="{{ site.coverImage }}" />
+<meta name="twitter:image" content="{{ coverImage }}" />
 <meta name="twitter:site" content="@pushkinsprefers">
-<meta name="twitter:title" content="{{ site.title }}" />
+<meta name="twitter:title" content="{{ title }}" />
 <meta name="twitter:url" content="{{ site.baseUrl }}" />
 
-<title>
-  {% if pageTitle %}
-    {{ pageTitle }} –
-  {% endif %}
+<link rel="apple-touch-icon" href="{{ site.favicon }}" />
+<link rel="icon" type="image/png" href="{{ site.favicon }}" sizes="196x196" />
 
-  {{ site.title }}
-</title>
+<style>{% include '../styles/application.min.css' %}</style>
+
+<title>{{ title }}</title>

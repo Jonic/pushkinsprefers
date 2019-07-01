@@ -2,31 +2,12 @@
 layout: application
 useFooter: false
 useHeader: false
-sectionStlyes: zine
+sectionStlyes: zines/base.css
 ---
-<link rel="stylesheet" type="text/css" href="assets/css/globals.css" />
-<link rel="stylesheet" type="text/css" href="assets/css/zine/base.css" />
-<link rel="stylesheet" type="text/css" href="assets/css/zine/mar-19.css" />
-<title>Zine March &rsquo;19 / Pushkins Prefers</title>
-<meta content="https://pushkinsprefers.biz/zine-mar19.html" property="og:url" />
-<meta content="https://pushkinsprefers.biz/zine-mar19.html" property="twitter:url" />
-
-<meta name="twitter:title" property="og:title" content="Zine March '19 / Pushkins Prefers" />
-<meta name="twitter:image" content="https://pushkinsprefers.biz/assets/images/cover_zinemar19.jpg" />
-<meta property="og:image" content="https://pushkinsprefers.biz/assets/images/cover_zinemar19.jpg">
-
-<meta content="" name="description" />
-
 <header>
-  <nav class="home">
-    <h2>Pushkins Prefers</h2>
-    <a href="/">&larr;Homepage</a>
-  </nav>
-
+  {% include '../includes/shared/homeLink.njk' %}
   <h1>Zine</h1>
-
-  <time class="date" datetime="2019-03">March &rsquo;19</time>
-
+  <time class="date" datetime="{{pageDate}}">{{pageDate | dateDisplay}}</time>
 </header>
 
 <div class="cover" style="background-image:url(assets/images/zine/feb-19/lil.jpg)">
@@ -34,5 +15,5 @@ sectionStlyes: zine
 </div>
 
 <article>
-{{ content | safe }}
+  {{ content | safe }}
 </article>

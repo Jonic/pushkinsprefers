@@ -2,7 +2,7 @@ module.exports = ({ artist, image, label, title, url, year }) => `
   <div class="release-deets">
     <div class="img">
       <a href="${url}">
-        <img src="${image}" alt="Cover artwork of ${title} by ${artist}">
+        <img alt="Cover artwork of ${title} by ${artist}" src="${image}">
       </a>
     </div>
     <div class="info">
@@ -12,7 +12,7 @@ module.exports = ({ artist, image, label, title, url, year }) => `
           <em>${title}</em>
         </a>
       </h3>
-      <p class="meta">${label} ${year}</p>
+      <p class="meta">${label} — ${year}</p>
     </div>
   </div>
 `
