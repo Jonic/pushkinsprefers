@@ -1,4 +1,5 @@
 archive
 node_modules
 public
+src/**/_source
 src/assets
