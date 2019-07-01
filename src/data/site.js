@@ -9,6 +9,6 @@ module.exports = {
   buildTime: new Date(),
   coverImage: `${baseUrl}/assets/images/covers/index.png`,
   favicon: `${baseUrl}/assets/images/icons/favicon.png`,
-  description: 'A new publishing empire.',
+  description: 'A new publishing empire',
   title: 'Pushkins Prefers',
 }

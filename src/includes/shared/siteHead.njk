@@ -1,6 +1,6 @@
 {% set description = pageDescription or site.description %}
 {% set coverImage = pageCoverImage or site.converImage %}
-{% set title = pageTitle | titleText %}
+{% set title = [pageTitle or site.description, site.title].join(' / ') %}
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
