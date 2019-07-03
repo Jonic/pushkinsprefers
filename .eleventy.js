@@ -22,17 +22,27 @@ module.exports = config => {
 
   return {
     dir: {
-      input: './src/content',
-
       data: `../data`,
       includes: '../includes',
+      input: './src/content',
       layouts: '../layouts',
-
       output: './public',
     },
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',
     passthroughFileCopy: true,
-    templateFormats: ['njk', 'md'],
+    templateFormats: [
+      'css',
+      'gif',
+      'jpg',
+      'js',
+      'md',
+      'njk',
+      'otf',
+      'png',
+      'ttf',
+      'woff',
+      'woff2',
+    ],
   }
 }

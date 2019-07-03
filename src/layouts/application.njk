@@ -1,27 +1,35 @@
 ---
-useFooter: true
-useHeader: true
+coverFormat: png
+coverImage: true
+permalink: some-permalink-here-i-guess
+showHomeLink: true
+sectionStyles: false
+styles: true
+useFooter: false
+useHeader: false
 ---
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% include '../includes/shared/siteHead.njk' %}
+    {% include 'siteHead.njk' %}
   </head>
 
   <body>
     {% if useHeader %}
-      {% include "shared/header.njk" %}
+      {% include 'header.njk' %}
     {% endif %}
 
-    <main>
-      {{ content | safe }}
-    </main>
+    {% if showHomeLink %}
+      {% include 'homeLink.njk' %}
+    {% endif %}
+
+    {{ content | safe }}
 
     {% if useFooter %}
-      {% include "shared/footer.njk" %}
+      {% include 'footer.njk' %}
     {% endif %}
 
-    {% include '../includes/shared/siteFooter.njk' %}
+    {% include 'siteFooter.njk' %}
   </body>
 </html>
 

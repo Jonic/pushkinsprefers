@@ -1,3 +1,4 @@
+const inspect = require('./inspect.js')
 const releaseDeets = require('./releaseDeets.js')
 
-module.exports = { releaseDeets }
+module.exports = { inspect, releaseDeets }

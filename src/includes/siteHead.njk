@@ -1,0 +1,41 @@
+{% set pageDescription = description or site.description %}
+{% set pageTitle = [title or site.description, site.title].join(' / ') %}
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="stylesheet" href="/_assets/styles/reset.css" />
+<link rel="stylesheet" href="/_assets/styles/globals.css" />
+
+{% if styles %}
+  <link rel="stylesheet" href="{{ permalink }}/styles.css" />
+{% endif %}
+
+<link rel="apple-touch-icon" href="{{ site.favicon }}" />
+<link rel="icon" type="image/png" href="{{ site.favicon }}" sizes="196x196" />
+<meta name="application-name" content="{{ pageTitle }}" />
+<meta name="description" content="{{ pageDescription }}" />
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="{{ site.favicon }}" />
+<meta name="msapplication-square150x150logo" content="{{ site.favicon }}" />
+<meta name="msapplication-square310x310logo" content="{{ site.favicon }}" />
+<meta name="msapplication-square70x70logo" content="{{ site.favicon }}" />
+<meta name="msapplication-wide310x150logo" content="{{ site.favicon }}" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{ site.twitter }}" />
+<meta name="twitter:title" content="{{ pageTitle }}" />
+<meta name="twitter:url" content="{{ site.baseUrl }}" />
+<meta property="og:site_name" content="{{ pageTitle }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.baseUrl }}" />
+
+{% if coverImage %}
+  <meta name="twitter:image" content="{{site.baseUrl}}/{{permalink}}/cover.png" />
+  <meta property="og:image" content="{{site.baseUrl}}/{{permalink}}/cover.png" />
+{% else %}
+  <meta name="twitter:image" content="{{ site.coverImage }}" />
+  <meta property="og:image" content="{{ site.coverImage }}" />
+{% endif %}
+
+<title>{{ title }}</title>

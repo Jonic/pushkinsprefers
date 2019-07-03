@@ -15,9 +15,9 @@ const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps')
 const stripComments = require('gulp-strip-css-comments')
 
-const cssDest = './src/includes/styles'
-const sassSource = './src/assets/styles/**/*'
-const applicationStyles = './src/assets/styles/application.scss'
+const cssDest = './public/styles'
+const sassSource = './src/styles/**/*'
+const applicationStyles = './src/styles/application.scss'
 
 // Set banner template
 const banner = [

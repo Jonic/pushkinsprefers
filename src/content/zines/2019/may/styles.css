@@ -1,0 +1,70 @@
+/* ZINE April & May 2019 */
+
+@font-face {
+  font-family: "spacemono";
+  src: url("../../fonts/spacemono-regs.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "spacemono";
+  src: url("../../fonts/spacemono-bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+    border-color:#000;
+    background-color:#222;
+    color:#ddd;
+}
+a {
+    color:#49FFE3;
+    
+}
+a:hover,
+a:focus,
+a:active {
+    color:#FF00FF;
+}
+
+::selection {
+    background:#FF00FF;
+}
+
+h1 {
+    color:#49FFE3;
+    font-family: spacemono,monospace;
+}
+
+
+.cover {
+    height:65vh;
+    background-size:cover;
+    background-position:center center;
+}
+.cover img {
+    display:none;   
+}
+
+.cover.eins {
+    background-image:url(../../images/zine/may-19/wait1-mob.gif);
+}
+.cover.zwei {
+    background-image:url(../../images/zine/may-19/wait2-mob.gif);
+}   
+.cover.drei {
+    background-image:url(../../images/zine/may-19/wait3-mob.gif);
+}
+
+@media only screen and (min-width: 900px) {
+
+    .cover.eins {
+        background-image:url(../../images/zine/may-19/wait1.gif);
+    }
+    .cover.zwei {
+        background-image:url(../../images/zine/may-19/wait2.gif);
+    }   
+    .cover.drei {
+        background-image:url(../../images/zine/may-19/wait3.gif);
+    }
+
+}

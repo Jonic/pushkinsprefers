@@ -9,12 +9,8 @@
   },
   "version": "1000000.0.0",
   "scripts": {
-    "build": "run-s gulp:build eleventy:build",
-    "develop": "gulp build && run-p gulp:develop eleventy:develop",
-    "eleventy:build": "ELEVENTY_ENV=prod eleventy",
-    "eleventy:develop": "ELEVENTY_ENV=dev eleventy --serve",
-    "gulp:build": "gulp build",
-    "gulp:develop": "gulp start",
+    "build": "ELEVENTY_ENV=prod eleventy",
+    "develop": "ELEVENTY_ENV=dev eleventy --serve",
     "lint:staged": "lint-staged"
   },
   "dependencies": {
