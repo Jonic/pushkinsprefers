@@ -1,70 +1,74 @@
 /* ZINE April & May 2019 */
 
 @font-face {
-  font-family: "spacemono";
-  src: url("../../fonts/spacemono-regs.ttf") format("truetype");
+  font-family: 'spacemono';
   font-weight: normal;
+  src: url('../../fonts/spacemono-regs.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: "spacemono";
-  src: url("../../fonts/spacemono-bold.ttf") format("truetype");
+  font-family: 'spacemono';
   font-weight: bold;
+  src: url('../../fonts/spacemono-bold.ttf') format('truetype');
 }
 
 body {
-    border-color:#000;
-    background-color:#222;
-    color:#ddd;
+  background-color: #222;
+  border-color: #000;
+  color: #ddd;
 }
+
 a {
-    color:#49FFE3;
-    
+  color: #49ffe3;
 }
+
 a:hover,
 a:focus,
 a:active {
-    color:#FF00FF;
+  color: #f0f;
 }
 
 ::selection {
-    background:#FF00FF;
+  background: #f0f;
 }
 
 h1 {
-    color:#49FFE3;
-    font-family: spacemono,monospace;
+  color: #49ffe3;
+  font-family: spacemono, monospace;
 }
-
 
 .cover {
-    height:65vh;
-    background-size:cover;
-    background-position:center center;
+  background-position: center center;
+  background-size: cover;
+  height: 65vh;
 }
+
 .cover img {
-    display:none;   
+  display: none;
 }
 
 .cover.eins {
-    background-image:url(../../images/zine/may-19/wait1-mob.gif);
+  background-image: url('./_images/wait1-mob.gif');
 }
+
 .cover.zwei {
-    background-image:url(../../images/zine/may-19/wait2-mob.gif);
-}   
+  background-image: url('./_images/wait2-mob.gif');
+}
+
 .cover.drei {
-    background-image:url(../../images/zine/may-19/wait3-mob.gif);
+  background-image: url('./_images/wait3-mob.gif');
 }
 
 @media only screen and (min-width: 900px) {
+  .cover.eins {
+    background-image: url('./_images/wait1.gif');
+  }
 
-    .cover.eins {
-        background-image:url(../../images/zine/may-19/wait1.gif);
-    }
-    .cover.zwei {
-        background-image:url(../../images/zine/may-19/wait2.gif);
-    }   
-    .cover.drei {
-        background-image:url(../../images/zine/may-19/wait3.gif);
-    }
+  .cover.zwei {
+    background-image: url('./_images/wait2.gif');
+  }
 
+  .cover.drei {
+    background-image: url('./_images/wait3.gif');
+  }
 }

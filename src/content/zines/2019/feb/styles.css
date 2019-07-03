@@ -1,34 +1,36 @@
 @font-face {
-  font-family: "spacemono";
-  src: url("../../fonts/spacemono-regs.ttf") format("truetype");
+  font-family: 'spacemono';
   font-weight: normal;
+  src: url('/_assets/fonts/spacemono-regs.ttf') format('truetype');
 }
+
 @font-face {
-  font-family: "spacemono";
-  src: url("../../fonts/spacemono-bold.ttf") format("truetype");
+  font-family: 'spacemono';
   font-weight: bold;
+  src: url('/_assets/fonts/spacemono-bold.ttf') format('truetype');
 }
 
 ::selection {
-    background:#81F55F;
+  background: #81f55f;
 }
 
 body {
-    border-color:#FF3079;
-    background-color:#CED7D4;
+  background-color: #ced7d4;
+  border-color: #ff3079;
+}
 
-}
 header,
-h2
- {
-    font-family: "spacemono",monospace;
-    color:#FF3079;
+h2 {
+  color: #ff3079;
+  font-family: 'spacemono', monospace;
 }
+
 a {
-    color:#FF3079;
+  color: #ff3079;
 }
+
 a:hover,
 a:focus,
 a:active {
-    color:#000;
+  color: #000;
 }
