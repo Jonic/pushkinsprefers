@@ -9,10 +9,4 @@ sectionStyles: zines
   <time class="date" datetime="{{pageDate}}">{{pageDate | dateDisplay}}</time>
 </header>
 
-<div class="cover" style="background-image:url(assets/images/zine/feb-19/lil.jpg)">
-  <img src="assets/images/zine/feb-19/lil.jpg" alt="">
-</div>
-
-<article>
-  {{ content | safe }}
-</article>
+{{ content | safe }}

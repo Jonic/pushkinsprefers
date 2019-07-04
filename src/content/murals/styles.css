@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'dos';
+  src: url('/_assets/fonts/dos.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+body {
+  background: #000;
+  color: #999;
+  font-family: 'dos', monospace;
+  font-size: 20px;
+  font-smooth: never;
+  margin: 1rem 0;
+  margin-top: 10rem;
+}
+
+a {
+  color: pink;
+}
+
+a:hover,
+a:focus {
+  color: white;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3.4rem;
+  position: fixed;
+  right: 4%;
+  text-align: right;
+  text-shadow: 0.3rem 0.3rem 0 #000;
+  top: 1rem;
+  z-index: 3;
+}
+
+article {
+  background: #000;
+  position: relative;
+  z-index: 2;
+}
+
+.mural {
+  background-origin: 5px red yellow;
+  overflow-x: scroll;
+  position: relative;
+}
+
+img {
+  margin: 0 5%;
+  max-height: 60vh;
+}
+
+.info {
+  margin: 20px 5% 3em 5%;
+}
+
+@media only screen and (min-width: 500px) {
+  body {
+    font-size: 30px;
+    margin-top: 12rem;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  img {
+    max-height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 8rem;
+  }
+}

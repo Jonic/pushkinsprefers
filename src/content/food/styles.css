@@ -1,4 +1,4 @@
-@import url('../fonts/archer.css');
+@import url('/_assets/styles/fonts/archer.css');
 
 body {
   background: #e86a73;
@@ -29,10 +29,10 @@ a.icon:hover {
 }
 
 a.file {
-  background-image: url('./images/icon-file.gif');
+  background-image: url('./_images/icon-file.gif');
 }
 
 a.up {
-  background-image: url('./images/icon-back.gif');
+  background-image: url('./_images/icon-back.gif');
   padding-bottom: 10px;
 }

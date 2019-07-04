@@ -3,13 +3,13 @@
 @font-face {
   font-family: 'spacemono';
   font-weight: normal;
-  src: url('../../fonts/spacemono-regs.ttf') format('truetype');
+  src: url('/_assets/fonts/spacemono-regs.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'spacemono';
   font-weight: bold;
-  src: url('../../fonts/spacemono-bold.ttf') format('truetype');
+  src: url('/_assets/fonts/spacemono-bold.ttf') format('truetype');
 }
 
 body {
