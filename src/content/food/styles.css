@@ -1,9 +1,7 @@
-@import url('/_assets/styles/fonts/archer.css');
-
 body {
   background: #e86a73;
   background: #d6f264;
-  font-family: 'archer', monospace;
+  font-family: monospace;
   font-size: 1.5rem;
   font-smooth: never;
   -webkit-font-smoothing: none;
