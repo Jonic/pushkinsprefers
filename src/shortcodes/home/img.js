@@ -1,8 +1,11 @@
+const he = require('he')
+const e = he.encode
+
 module.exports = ({ imageAlt, imageSrc, title, url }) => `
   <article class="feature image">
-    <a href="${url}">
+    <a href="${e(url)}">
       <h3>${title}</h3>
-      <img alt="${imageAlt}" src="${imageSrc}">
+      <img alt="${e(imageAlt)}" src="${imageSrc}">
     </a>
   </article>
 `

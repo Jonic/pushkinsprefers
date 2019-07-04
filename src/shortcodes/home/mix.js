@@ -2,21 +2,17 @@
 module.exports = ({ intro, soundcloudUrl, title, url }) => {
   return `
     <article class="mix">
-      <h3>
-        <a href="${url}">
-          ${title}
-        </a>
-      </h3>
+      <h3><a href="${url}">${title}</a></h3>
 
       <p>${intro}</p>
 
       <iframe
-        width="100%"
+        allow="autoplay"
+        frameborder="no"
         height="166"
         scrolling="no"
-        frameborder="no"
-        allow="autoplay"
         src="${soundcloudUrl}"
+        width="100%"
       ></iframe>
     </article>
   `
