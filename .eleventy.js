@@ -48,8 +48,10 @@ module.exports = config => {
       'otf',
       'png',
       'ttf',
+      'txt',
       'woff',
       'woff2',
+      'xml',
     ],
   }
 }
