@@ -1,4 +1,4 @@
-module.exports = ({ imageAlt, imageSrc, isBig, title, url }) => `
+module.exports = ({ imageAlt, imageSrc, intro, isBig, title, url }) => `
   <article class="feature ${isBig && 'big'}">
     <h3>
       <a href="${url}">

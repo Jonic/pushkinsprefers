@@ -6,66 +6,77 @@ useFooter: true
 useHeader: true
 ---
 <main>
-  <article class="feature big">
-    <h3><a href="/zines/2019/may/">BUMPER ZINE April &amp; May 2019 issue</a></h3>
-    <p>Once upon a time our editor went on holiday (love ya, Scotland) and forgot to write about music, so here we have our first BUMPER ZINE issue. It&rsquo;s like the regular edition but bigger and more rushed.</p>
-    <a href="/zines/2019/may/"><img src="/zines/2019/may/cover.gif" alt="Graphic of neon text that reads 'wait for it to kick in'"></a>
-  </article>
+  {% feature
+      imageAlt='Graphic of neon text that reads "wait for it to kick in"',
+      imageSrc='/zines/2019/may/cover.gif',
+      intro="Once upon a time our editor went on holiday (love ya, Scotland) and forgot to write about music, so here we have our first BUMPER ZINE issue. It&rsquo;s like the regular edition but bigger and more rushed.",
+      isBig=true,
+      title='BUMPER ZINE April &amp; May 2019 issue',
+      url='/zines/2019/may/'
+  %}
 
-  <article class="mix">
-    <h3><a href="https://soundcloud.com/pushkinsprefers/dj-birkens-stocks-midnight-mischief">DJ Birkens Stock&rsquo;s Midnight Mischief</a></h3>
-    <p>A rare glimpse into the night-time activities of Nottingham&rsquo;s most elusive DJ</p>
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611693841&color=%230cff00&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-  </article>
+  {% mix
+    intro='A rare glimpse into the night-time activities of Nottingham&rsquo;s most elusive DJ',
+    soundcloudUrl='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611693841&color=%230cff00&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false',
+    title='DJ Birkens Stock&rsquo;s Midnight Mischief',
+    url='https://soundcloud.com/pushkinsprefers/dj-birkens-stocks-midnight-mischief'
+  %}
 
-  <article class="mix">
-    <h3><a href="https://soundcloud.com/pushkinsprefers/der-shrankdisko-neun">Der Shrankdisko Neun</a></h3>
-    <p>Celebrating a life of colour, variety, style and hedonism, the Closet Disco series continues in its usual uplifting style. Play it loud in your kitchens, cars, on your commute.</p>
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611682519&color=%23ff00e3&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-  </article>
+  {% mix
+    intro='Celebrating a life of colour, variety, style and hedonism, the Closet Disco series continues in its usual uplifting style. Play it loud in your kitchens, cars, on your commute.',
+    soundcloudUrl='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/611682519&color=%23ff00e3&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false',
+    title='Der Shrankdisko Neun',
+    url='https://soundcloud.com/pushkinsprefers/der-shrankdisko-neun'
+  %}
 
-  <article class="feature">
-    <h3><a href="/zines/2019/mar/">ZINE March 2019 issue</a></h3>
-    <p>Our March zine issue rounds up some of our favourite recent music. This one is for singular artists and wild mutations.</p>
-    <a href="/zines/2019/mar/"><img src="/zines/2019/mar/_images/pat.jpg" alt="Black and white photo of Patrick Young, Raconteur, deep in BBQ smoke"></a>
-  </article>
+  {% feature
+      imageAlt='Black and white photo of Patrick Young, Raconteur, deep in BBQ smoke',
+      imageSrc='/zines/2019/mar/_images/pat.jpg',
+      intro="Our March zine issue rounds up some of our favourite recent music. This one is for singular artists and wild mutations.",
+      title='ZINE March 2019 issue',
+      url='/zines/2019/mar/'
+  %}
 
-  <article class="mix">
-    <h3><a href="https://soundcloud.com/pushkinsprefers/dj-ball-haulage-presents-brexit-beats">March mix: BREXIT BEATS</a></h3>
-    <p>DJ Ball Haulage compiles a selection of his records to serve as an antidote to our confusing and concerning times.</p>
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/589482006&color=%239eb55d&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-  </article>
+  {% mix
+    intro='DJ Ball Haulage compiles a selection of his records to serve as an antidote to our confusing and concerning times.',
+    soundcloudUrl='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/589482006&color=%239eb55d&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false',
+    title='March mix: BREXIT BEATS',
+    url='https://soundcloud.com/pushkinsprefers/dj-ball-haulage-presents-brexit-beats'
+  %}
 
-  <article class="feature">
-    <h3><a href="/zines/2019/feb/">ZINE Febraury 2019 issue</a></h3>
-    <p>The more batshit everything becomes, the more poignant and reflective music is. Terrifying and refreshing in equal measures. Larger musical appetites should be feeling pretty satisfied right now.</p>
-    <a href="/zines/2019/feb/"><img src="/zines/2019/feb/_images/lil.jpg" alt="Artwork by Lily Wales, a collage showing a distorted face in lime green and bright pink"></a>
-  </article>
+  {% feature
+      imageAlt='Artwork by Lily Wales, a collage showing a distorted face in lime green and bright pink',
+      imageSrc='/zines/2019/feb/_images/lil.jpg',
+      intro="The more batshit everything becomes, the more poignant and reflective music is. Terrifying and refreshing in equal measures. Larger musical appetites should be feeling pretty satisfied right now.",
+      title='ZINE Febraury 2019 issue',
+      url='/zines/2019/feb/'
+  %}
 
-  <article class="feature image">
-    <a href="/amor/">
-      <h3>AMOR live in London</h3>
-      <img src="/amor/cover.png" alt="A photo of the band Amor, live in London">
-    </a>
-  </article>
+  {% img
+      imageAlt='A photo of the band Amor, live in London',
+      imageSrc='/amor/cover.png',
+      title='AMOR live in London',
+      url='/amor/'
+  %}
 
-  <article class="mix">
-    <h3><a href="https://soundcloud.com/pushkinsprefers/soothe">January mix: Soothe</a></h3>
-    <p>January is a good time to heal, catch up on sleep and reset foundations for the year ahead. The music here varies in mood but all subscribes to that common theme. It's been curated to enjoy in armchairs, on beaches, alone with headphones.</p>
-    <iframe scrolling="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558376335&amp;color=%233ae39b&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false" width="100%" height="166" frameborder="no"></iframe>
-  </article>
+  {% mix
+    intro="January is a good time to heal, catch up on sleep and reset foundations for the year ahead. The music here varies in mood but all subscribes to that common theme. It's been curated to enjoy in armchairs, on beaches, alone with headphones.",
+    soundcloudUrl='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/558376335&amp;color=%233ae39b&amp;auto_play=false&amp;hide_related=true&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=false',
+    title='January mix: Soothe',
+    url='https://soundcloud.com/pushkinsprefers/soothe'
+  %}
 
-  <article class="feature image">
-    <a href="/murals/">
-      <h3>Collected murals</h3>
-      <img src="/murals/cover.png" alt="A drug-induced pixel mural, jazz and sex">
-    </a>
-  </article>
+  {% img
+      imageAlt='A drug-induced pixel mural, jazz and sex',
+      imageSrc='/murals/cover.png',
+      title='Collected murals',
+      url='/murals/'
+  %}
 
-  <article class="mix">
-    <h3><a href="https://soundcloud.com/pushkinsprefers/dj-ball-haulage-presents-spacedubdanceonthebeach-vol-1">Spacedubdanceonthebeach volume 1</a>
-    </h3>
-    <p>A netherzone trip of a mix from our resident DJ Ball Haulage, perfect for your slumberdance.</p>
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/446046966&color=%2352599c&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"></iframe>
-  </article>
+  {% mix
+    intro='A netherzone trip of a mix from our resident DJ Ball Haulage, perfect for your slumberdance.',
+    soundcloudUrl='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/446046966&color=%2352599c&auto_play=false&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false',
+    title='Spacedubdanceonthebeach volume 1',
+    url='https://soundcloud.com/pushkinsprefers/dj-ball-haulage-presents-spacedubdanceonthebeach-vol-1'
+  %}
 </main>
